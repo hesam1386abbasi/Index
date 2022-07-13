@@ -1,0 +1,64 @@
+$calculatorBackground-color:slategray;
+$calculatorMargin:auto;
+@mixin BorderStyle {
+  border: 1px solid black;
+}
+$outputBackground-color:#dcdbe1;
+@mixin outputStyle {
+  color:#0a0d15;
+  width:187px;
+  height:65px;
+}
+$output-hoverBackground-color:ghostwhite;
+@mixin buttonStyle {
+  color:white;
+  padding:25px;
+}
+$buttonBackground-color:#0a0b0a;
+$button-hoverBackground-color:#282729;
+$button-activeBackground-color:#464545;
+@mixin clear1Padding {
+  padding: 25px;
+}
+$clear1Background-color:darkred;
+$clear1-hoverBackground-color:firebrick;
+$clear1-activeBackground-color:crimson;
+.calculator{
+  @include BorderStyle;
+  background-color:$calculatorBackground-color;
+  margin:$calculatorMargin;
+}
+.output {
+  @include BorderStyle;
+  background-color:$outputBackground-color;
+  @include outputStyle;
+}
+.output:hover {
+  background-color:$output-hoverBackground-color;
+  @include outputStyle;
+}
+.button {
+  @include buttonStyle;
+  background-color:$buttonBackground-color;
+}
+.button:hover {
+  @include buttonStyle;
+  background-color:$button-hoverBackground-color;
+}
+.button:active {
+  @include buttonStyle;
+  background-color:$button-activeBackground-color;
+}
+.clear1 {
+  @include clear1Padding;
+  background-color:$clear1Background-color;
+
+}
+.clear1:hover {
+  @include clear1Padding;
+  background-color:$clear1-hoverBackground-color;
+}
+.clear1:active {
+  @include clear1Padding;
+  background-color:$clear1-activeBackground-color;
+}
