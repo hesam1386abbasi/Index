@@ -3,45 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <style>
-        .calculator{
-            background-color:slategray;
-            border: 1px solid black;
-            margin:auto;
-        }
-        .output {
-            background-color:#dcdbe1;
-            color:#0a0d15;
-            border: 1px solid black;
-            width: 187px;
-            height: 65px;
-        }
-        .output:hover {
-            background-color:ghostwhite;
-        }
-        .button {
-            background-color:#0a0b0a;
-            color:white;
-            padding:25px;
-        }
-        .button:hover {
-            background-color:#282729;
-        }
-        .button:active {
-            background-color:#464545;
-        }
-        .clear1 {
-            background-color:darkred;
-            color:white;
-            padding:25px;
-        }
-        .clear1:hover {
-            background-color:firebrick;
-        }
-        .clear1:active {
-            background-color:crimson;
-        }
-    </style>
+    <link rel="stylesheet" href="project-5.css">
 </head>
 <body style="background-color:powderblue">
 
@@ -76,46 +38,6 @@
     </tr>
 </table>
 
-
-<script>
-    function clear1() {
-        let output = document.getElementById("output");
-        output.value = '0';
-    }
-    function display (value) {
-        document.getElementById("output").value += value;
-        document.getElementById("total").disabled = false;
-        document.getElementById("subtraction").disabled = false;
-        document.getElementById("multiplication").disabled = false;
-        document.getElementById("division").disabled = false;
-    }
-    function calculate() {
-        let p = document.getElementById("output").value;
-        document.getElementById("output").value = eval(p);
-    }
-    function total() {
-        document.getElementById("total").disabled = true;
-        document.getElementById("subtraction").disabled = true;
-        document.getElementById("multiplication").disabled = true;
-        document.getElementById("division").disabled = true;
-    }
-    function subtraction() {
-        document.getElementById("total").disabled = true;
-        document.getElementById("subtraction").disabled = true;
-        document.getElementById("multiplication").disabled = true;
-        document.getElementById("division").disabled = true;
-    }
-    function multiplication () {
-        document.getElementById("multiplication").disabled = true;
-        document.getElementById("division").disabled = true;
-        document.getElementById("total").disabled = true;
-    }
-    function division () {
-        document.getElementById("multiplication").disabled = true;
-        document.getElementById("division").disabled = true;
-        document.getElementById("total").disabled = true;
-    }
-</script>
-
+<script src="project-5.js"></script>
 </body>
 </html>
