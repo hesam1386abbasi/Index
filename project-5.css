@@ -1,0 +1,45 @@
+.calculator {
+    border: 1px solid black;
+    background-color: slategray;
+    margin: auto;
+}
+.output {
+    border: 1px solid black;
+    background-color: #dcdbe1;
+    color: #0a0d15;
+    width: 187px;
+    height: 65px;
+}
+.output:hover {
+    background-color: ghostwhite;
+    color: #0a0d15;
+    width: 187px;
+    height: 65px;
+}
+.button {
+    color: white;
+    padding: 25px;
+    background-color: #0a0b0a;
+}
+.button:hover {
+    color: white;
+    padding: 25px;
+    background-color: #282729;
+}
+.button:active {
+    color: white;
+    padding: 25px;
+    background-color: #464545;
+}
+.clear1 {
+    padding: 25px;
+    background-color: darkred;
+}
+.clear1:hover {
+    padding: 25px;
+    background-color: firebrick;
+}
+.clear1:active {
+    padding: 25px;
+    background-color: crimson;
+}
